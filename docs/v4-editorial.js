@@ -44,6 +44,6 @@
   ],['关注路线连接的资源，而不只看地图形状。','不传播野生象群的实时精确位置。','比较不同措施时，查看是否有长期监测。'],[['“一块保护地就足够保护大象。”','保护地之外的连接空间同样可能关键。'],['“廊道就是一条固定道路。”','动物移动会随季节、资源和风险改变。']]);
 
   detail = a => {const related=a.related.map(byId).filter(Boolean);return `<article class="detail"><div class="crumb">${link('/','首页')} / ${link('/'+a.cat+'/',sections[a.cat][0])} / ${a.title}</div><p class="eyebrow detail-kicker">${sections[a.cat][0]} · ${a.type}</p><h1>${a.title}</h1><p class="lede">${a.lead}</p><img class="detail-image" src="${a.img}" alt="${esc(a.title)} 的示意照片">${list('要点摘要',a.quick,'quick')}${a.audio?audio():''}${a.body.map(([h,p])=>`<section><h2>${h}</h2><p>${p}</p></section>`).join('')}${list('观察与阅读提示',a.tips,'tips')}${list('容易混淆的说法',a.myths,'myths')}${sources(a)}<section><h2>继续阅读</h2><div class="card-grid compact">${related.map(card).join('')}</div></section></article>`};
-  const observer=new MutationObserver(replaceVisibleLanguage); observer.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['aria-label','placeholder','title']});
-  replaceVisibleLanguage(); render();
+  render();
+  replaceVisibleLanguage();
 })();
