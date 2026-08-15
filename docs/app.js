@@ -49,3 +49,4 @@ setTimeout(()=>{const githubPetPath=document.createElement('style');githubPetPat
 setTimeout(()=>{const contentV3=document.createElement('script');contentV3.src=`${siteBase}/content-v3.js`;document.body.append(contentV3)},180);
 setTimeout(()=>{const editorialV4=document.createElement('script');editorialV4.src=`${siteBase}/v4-editorial.js`;document.body.append(editorialV4)},220);
 setTimeout(()=>{const petV2=document.createElement('script');petV2.src=`${siteBase}/pet-v2.js`;document.body.append(petV2)},240);
+setTimeout(()=>{const stable=document.createElement('script');stable.src=`${siteBase}/stability.js`;document.body.append(stable)},280);
