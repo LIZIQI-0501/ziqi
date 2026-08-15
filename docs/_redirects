@@ -1,0 +1,11 @@
+/search  /index.html  200
+/species/*  /index.html  200
+/behavior/*  /index.html  200
+/media/*  /index.html  200
+/sound/*  /index.html  200
+/research/*  /index.html  200
+/conservation/*  /index.html  200
+/fact-check/*  /index.html  200
+/elephants/*  /index.html  200
+/about/*  /index.html  200
+/diary/*  /index.html  200
